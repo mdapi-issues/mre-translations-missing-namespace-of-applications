@@ -13,7 +13,7 @@ jobs:
           node-version-file: .node-version
       - name: Install dependencies
         run: |
-          npm install --global @salesforce/cli
+          npm install --ignore-scripts --global @salesforce/cli
           sf --version
           sf plugins --core
       - name: Authenticate DevHub and create scratch org
